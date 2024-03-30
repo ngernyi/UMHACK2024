@@ -17,6 +17,9 @@ This project aims to provide a solution to identify Shariah Compliance of a comp
 # Installation
 Install the required dependencies
 
+# Usage
+Run the app.py file to run the Python Flask server to start
+
 # Data Preproccesing
 To increase the accuracy of the extraction by AI, a data preproccesing step is taken. The pdf file will be segmented by finding the keywords of the statements that contain the data that we want to extract. By selecting only the relevant pages in the pdf file, the scope for the AI to extract will be minimized, hence increase the accuracy.
 
@@ -35,8 +38,11 @@ This project provides the following functions for extracting financial data:
 # Creating AI Assistants
 To perform data extraction, assistants are created using OpenAI's API. These assistants are trained to understand instructions and extract relevant financial data from PDF files.
 
-# Connecting Backend and Frontend using Flask
-After the data are extracted from the backend, they are sent to the frontend using FLASK
+# Connecting Backend and Frontend using Flask and AJAX
+After the data are extracted from the AI assistants, the data are sent to the frontend from backend using FLASK, specifically using 'action' and 'method' to complete the connection between frontend and backend. On the other hand, when frontend have data that needed to transfer to backend, AJAX from JavaScript will be utilized.
 
-#
+# Data Storage
+Wherever data that needed to be saved, it will be saved into JSON format.
+
+
 
